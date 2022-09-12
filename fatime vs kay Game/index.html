@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-html">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Fatime+VS+kay</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4d8fa8512b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+           <!----======CONTAINER======----------->
+           <div class="container center">
+                <div class="landpage">
+                    <div class="headline center">
+                        <h6>scissor,paper and rock game</h6>
+                    </div>
+                    <div class="frontpage pad15 col">
+                        <div class="playerImage row">
+                              <img src="image/fatime.jpg" alt="fatime" class="player">
+                              <h3>vS</h3>
+                              <img src="image/kay.jpg" alt="kay" class="player">
+                        </div>
+                        <div class="playNow center">
+                            <button class="btn" id="playNOW">play Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gameplay col1">
+                    <div class="playerAvatar row">
+                            <div class="playercontainer col">
+                                <img src="image/fatime.jpg" alt="fatime" class="player">
+                                  <div class="dashbord">
+                                      <h6 id="fatimepoint"> scores 0</h6>
+                                       <h6 id="fatime">  fatime : </h6>
+                                  </div>
+                            </div>
+                            <div class="playercontainer col">
+                                <img src="image/kay.jpg" alt="kay" class="player">
+                                  <div class="dashbord">
+                                      <h6 id="kaypoint"> scores 0</h6>
+                                      <h6 id="kay">  unclekay :</h6>
+                                  </div>
+                            </div>
+                      </div>
+                      <div class="gamebord col">
+                           <div class="gameNUmber">
+                                 <h6 id="gameplayed">you have 20 chances</h6>
+                           </div>
+                           <div class="gameOption row">
+                             <i class="fa fa-hand-scissors"  data-id="scissor"></i>
+                             <i class="fa fa-hand-back-fist" data-id="rock"></i>
+                             <i class="fa fa-hand" data-id="paper"></i>
+                           </div>
+                      </div>
+                      <div class="Gameresult col">
+                          <h6 id="gameresult"> whats your selection </h6>
+                          <button class="btn" id="gamecheck">gameCheck</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="endPage gameEND col">
+                <div class="finalResult col  pad15" >
+                     <div class="resultMessage">
+                        <h6>Opps! <span id="emoj"> 😉 </span> its a Draw</h6>
+                     </div>
+                     <div class="winnerImage">
+                      <!----  <img src="image/fatime.jpg" alt="fatime" class="player"> -->
+                     </div>
+                </div>
+                     <button class="btn refreshGame">
+                          play Again
+                     </button>
+                </div>
+           </div>
+            <!----======CONTAINER END======------>
+            <script src="game.js"></script>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+:root {
+    --text-fonts: 1.1rem;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.274);
+    --skin-color: rgba(225, 213, 213, 0.756);
+    --main-color: rgba(243, 237, 237, 0.985);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-image: url(image/pitza.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landpage{
+    width: 75%;
+   max-height: 80vh;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+.headline {
+    width: 100%;
+    margin: 20px 0;
+}
+.headline h6{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.frontpage {
+    width: 100%;
+}
+.pad15{
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.row1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.col1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.playerImage{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.playerImage h3{
+    font-size: 2rem;
+    overflow: hidden;
+}
+.player {
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.playNow {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+.btn {
+    background: var(--skin-color);
+    border: none;
+    font-size: 1.5rem;
+    padding: 5px 14px;
+    border-radius: 5px;
+    border-bottom: 30px ;
+}
+.btn:hover{
+    box-shadow: var(--box-shadow);
+    color: red;
+}
+/* ======= PLAY GROUND ======== */
+
+.gameplay{
+    width: 75%;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    position: absolute;
+    z-index: -10;
+    visibility: hidden;
+}
+.gameplay.active {
+    z-index: 10;
+    visibility: visible;
+}
+.playercontainer {
+    width: 48%;
+}
+.playerAvatar {
+    width: 90%;
+    min-height: 30vh;
+}
+.dashbord h6 {
+    font-size: 1.1rem;
+    padding: 5px 0;
+}
+
+.gamebord {
+    margin-top: 20px;
+    width: 100%;
+    min-height: 30vh;
+}
+.gameNUmber {
+    width: 100%;
+}
+.gameNUmber h6{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.gameOption {
+    width: 100%;
+}
+.gameOption i{
+    font-size: clamp(0.4rem, 2.0rem , 2.5rem);
+    border: 0.5px solid black;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+
+}
+@media(max-width: 280px){
+    .gameOption i{
+        width: 30%;
+    }
+}
+.gameOption i:hover {
+    transform: scale(1.06);
+}
+.gameOption i.fa:hover{
+    color: red;
+}
+.Gameresult {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Gameresult h6{
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 10px;
+}
+
+@media ( max-width: 500px){ 
+    .gameplay h6{
+        font-size: 0.8rem;
+        padding: 5px 0;
+    }
+    .landpage h6{
+        font-size: 0.8rem;
+        padding: 5px 0;
+    }
+}
+/*========== FINAL POP UP ======= */
+
+.endPage {
+    width: 75%;
+    min-height: 80vh;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+.finalResult {
+    width: 100%;
+}
+
+.gameEND {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -20;
+    visibility: hidden; 
+}
+
+.gameEND.active {
+    position: absolute;
+    z-index: 20;
+    visibility: visible; 
+}
+
+.resultMessage {
+    width: 100%;
+    text-align: center;
+}
+.resultMessage h6 {
+    font-size: clamp( 0.8rem, 1.1rem, 11.3rem);
+}
+.winnerImage {
+    width: 100%;
+    text-align: center;
+}
+#emoj {
+    font-size: 2.0rem;
+}
