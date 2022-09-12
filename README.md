@@ -3,4 +3,4 @@ its a scissor,paper and rock game. which is my niece fatime vs me as a computer 
 
 you can play it by clicking the link 👇👇👇👇
 
-fatimevsunclekay.netlify.app
+https://fatimevsunclekay.netlify.app/
